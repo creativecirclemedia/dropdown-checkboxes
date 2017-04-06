@@ -2,6 +2,8 @@
 
 A jQuery plugin that turns a bootstrap dropdown component into a compact multi-select button input that yields selected values as a hidden input with a urlencoded JSON array as its value.
 
+[Example](https://33d73a22f4b6dc792776-9396d99e5006374ffc15abe9d6ae8e26.ssl.cf1.rackcdn.com/dropdownCheckboxes.html)
+
 ## CDN includes
 
 ```
