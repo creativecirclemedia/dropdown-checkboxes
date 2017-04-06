@@ -2,8 +2,8 @@
   "name": "dropdown-checkboxes",
   "description": "A jQuery plugin which extends bootstrap's dropdown component",
   "main": [
-    "src/dropdownCheckboxes.min.js",
-    "src/dropdownCheckboxes.min.css"
+    "src/dropdownCheckboxes.js",
+    "src/dropdownCheckboxes.css"
   ],
   "authors": [
     "Creative Circle <dev@creativecirclemedia.com>"
