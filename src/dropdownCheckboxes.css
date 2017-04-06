@@ -1,0 +1,17 @@
+.cq-dropdown .btn-default {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cq-dropdown ul.dropdown-menu li {
+  font-size: 80%;
+  margin: 1px 10px;
+}
+.cq-dropdown ul.dropdown-menu label {
+  font-weight: normal;
+}
+.cq-dropdown ul.dropdown-menu button {
+  display: inline-block;
+  margin: 6px 0 0 0;
+  font-size: 90%
+}

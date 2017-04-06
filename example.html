@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <title>dropdown-checkboxes</title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/dropdownCheckboxes.min.css">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<HR>
+
+    <div class='container'>
+
+      <h1>dropdown-checkboxes</h1><BR>
+
+      <form class='myform'>
+
+
+      <!-- 
+
+        When initializing, a hidden input is created within the div, with the "data-name" value as the 
+        name of the input. That way, these can be used as any other form input.
+
+        When the values are saved, the value of the hidden is set to a JSON array of all ticked checkbox values.
+
+        Note that the checkboxes can be pre-checked on pageload, and the initializer will activate the UI appropriately.
+
+      -->
+
+      <div class="dropdown cq-dropdown" data-name='statuses'>
+        <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Status
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdown1">
+          <li>
+              <label class="radio-btn">
+                  <input type="checkbox" value='new' checked>
+                  New
+              </label>
+          </li>
+          <li>
+              <label class="radio-btn">
+                  <input type="checkbox" value='pending'>
+                  Pending
+              </label>
+          </li>
+          <li>
+              <label class="radio-btn">
+                  <input type="checkbox" value='hold'>
+                  Hold
+              </label>
+          </li>
+          <li>
+              <label class="radio-btn">
+                  <input type="checkbox" value='published' checked>
+                  Published
+              </label>
+          </li>
+          <li>
+              <label class="radio-btn">
+                  <input type="checkbox" value='spiked' checked>
+                  Spiked
+              </label>
+          </li>
+          <li class='text-center'>
+              <button type='button' class='btn btn-xs btn-default clear close-dropdown' value='Clear'>Clear</button>
+              <button type='button' class='btn btn-xs btn-default save' value='Save'>Save</button>
+          </li>
+        </ul>
+      </div>
+
+      <BR>
+
+      <!-- Multiple are cool, too -->
+      <div class="dropdown cq-dropdown" data-name='statuses'>
+        <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Category
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdown1">
+          <li>
+              <label class="radio-btn">
+                  <input type="checkbox" value='news' checked>
+                  News
+              </label>
+          </li>
+          <li>
+              <label class="radio-btn">
+                  <input type="checkbox" value='sports'>
+                  Sports
+              </label>
+          </li>
+          <li>
+              <label class="radio-btn">
+                  <input type="checkbox" value='opinion'>
+                  Opinion
+              </label>
+          </li>
+          <li>
+              <label class="radio-btn">
+                  <input type="checkbox" value='life' checked>
+                  Life
+              </label>
+          </li>
+          <li class='text-center'>
+              <button type='button' class='btn btn-xs btn-default clear close-dropdown' value='Clear'>Clear</button>
+              <button type='button' class='btn btn-xs btn-default save' value='Save'>Save</button>
+          </li>
+        </ul>
+      </div>
+
+      <BR>
+
+      </form>
+
+      <button type='button' class='btn btn-default btn-sm' onClick=" console.log( $('.myform').serialize() ) ">
+        Console log current form values
+      </button>
+
+    </div>
+
+    <BR><HR>
+
+    </div>
+    <script>
+    $(function(){
+      $('.cq-dropdown').dropdownCheckboxes();
+    });
+    </script>
+    <script src="./src/dropdownCheckboxes.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
+
+
