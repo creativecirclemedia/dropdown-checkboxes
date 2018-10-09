@@ -45,6 +45,12 @@
               $(this).dropdownCheckboxes('eval');
             });
 
+            // Select All button
+            dropdown.find('button.selectall').click(function(){
+              $(this).closest('.dropdownCheckboxes').find('input[type=checkbox]').prop('checked',true);
+              $(this).dropdownCheckboxes('eval');
+            });
+
             // Run the eval
             dropdown.dropdownCheckboxes('eval');
 
@@ -86,7 +92,7 @@
           if( $(this).hasClass('save') || $(this).hasClass('close-dropdown') ){
             $(this).closest(".dropdown-menu").prev().dropdown("toggle");
           }
-          
+
           // Done
           return this;
 
@@ -105,6 +111,6 @@
             return dropdownMethods[ methodOrOptions ].apply( this, Array.prototype.slice.call( arguments, 1 ));
         }else if( typeof methodOrOptions === 'object' || ! methodOrOptions ) {
             return dropdownMethods.init.apply(this,arguments);
-        } // Skip error    
+        } // Skip error
     };
 })( jQuery );
