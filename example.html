@@ -43,13 +43,42 @@
         Note that the checkboxes can be pre-checked on pageload, and the initializer will activate the UI appropriately.
 
       -->
-
+      Scrollable menu
       <div class="dropdown cq-dropdown" data-name='statuses'>
         <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           Status
           <span class="caret"></span>
         </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdown1">
+        <ul class="dropdown-menu scrollable-menu" aria-labelledby="dropdown1">
+          <li class='text-center'>
+            <button type='button' class='btn btn-xs btn-default selectall close-dropdown' value='Select All'>Select all and close</button>
+            <button type='button' class='btn btn-xs btn-default clear close-dropdown' value='Clear'>Clear and Close</button>
+            <button type='button' class='btn btn-xs btn-default save' value='Save'>Save and Close</button>
+          </li>
+          <li>
+            <label class="radio-btn">
+              <input type="checkbox" value='new' checked>
+              New
+            </label>
+          </li>
+          <li>
+            <label class="radio-btn">
+              <input type="checkbox" value='pending'>
+              Pending
+            </label>
+          </li>
+          <li>
+            <label class="radio-btn">
+              <input type="checkbox" value='hold'>
+              Hold
+            </label>
+          </li>
+          <li>
+            <label class="radio-btn">
+              <input type="checkbox" value='published' checked>
+              Published
+            </label>
+          </li>
           <li>
             <label class="radio-btn">
               <input type="checkbox" value='new' checked>
@@ -79,11 +108,6 @@
               <input type="checkbox" value='spiked' checked>
               Spiked
             </label>
-          </li>
-          <li class='text-center'>
-            <button type='button' class='btn btn-xs btn-default selectall close-dropdown' value='Select All'>Select all and close</button>
-            <button type='button' class='btn btn-xs btn-default clear close-dropdown' value='Clear'>Clear and Close</button>
-            <button type='button' class='btn btn-xs btn-default save' value='Save'>Save and Close</button>
           </li>
         </ul>
       </div>
