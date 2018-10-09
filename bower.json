@@ -10,7 +10,7 @@
     "Andy JArrett <mail@andyjarrett.co.uk>"
   ],
   "license": "BSD-2-Clause",
-  "homepage": "https://github.com/andyj/dropdown-checkboxes",
+  "homepage": "https://github.com/creativecirclemedia/dropdown-checkboxes",
   "ignore": [
     "**/.*",
     "node_modules",
