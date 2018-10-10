@@ -41,13 +41,13 @@
 
             // Clear button
             dropdown.find('button.clear').click(function(){
-              $(this).closest('.dropdownCheckboxes').find('input[type=checkbox]').prop('checked',false);
+              $(this).closest('.dropdownCheckboxes').find('input[type=checkbox]').prop('checked',false).trigger("change");
               $(this).dropdownCheckboxes('eval');
             });
 
             // Select All button
             dropdown.find('button.selectall').click(function(){
-              $(this).closest('.dropdownCheckboxes').find('input[type=checkbox]').prop('checked',true);
+              $(this).closest('.dropdownCheckboxes').find('input[type=checkbox]').prop('checked',true).trigger("change");
               $(this).dropdownCheckboxes('eval');
             });
 
