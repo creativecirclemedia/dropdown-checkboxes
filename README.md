@@ -16,3 +16,6 @@ A jQuery plugin that turns a bootstrap dropdown component into a compact multi-s
 `$('.mything').dropdownCheckboxes();`
 
 All of the config is in the markup. See the example for details.
+
+
+Original project is at [creativecirclemedia/dropdown-checkboxes](https://github.com/creativecirclemedia/dropdown-checkboxes)
