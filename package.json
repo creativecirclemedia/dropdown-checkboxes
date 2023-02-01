@@ -1,0 +1,22 @@
+{
+  "name": "dropdown-checkboxes",
+  "version": "1.0.0",
+  "description": "A bootstrap component",
+  "main": "src/dropdownCheckboxes.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativecirclemedia/dropdown-checkboxes.git"
+  },
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "Creative Circle Media Solutions",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creativecirclemedia/dropdown-checkboxes/issues"
+  },
+  "homepage": "https://github.com/creativecirclemedia/dropdown-checkboxes#readme"
+}
