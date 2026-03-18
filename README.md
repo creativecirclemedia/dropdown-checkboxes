@@ -1,3 +1,7 @@
+# DEPRECIATED
+
+Use the [multiselect](https://github.com/creativecirclemedia/multiselect) component instead.
+
 # dropdown-checkboxes
 
 A jQuery plugin that turns a bootstrap dropdown component into a compact multi-select button input that yields selected values as a hidden input with a urlencoded JSON array as its value.
