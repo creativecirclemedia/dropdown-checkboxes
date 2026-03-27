@@ -1,1 +1,2 @@
 .dropdownCheckboxes .btn-default{max-width:150px;overflow:hidden;text-overflow:ellipsis}.dropdownCheckboxes ul.dropdown-menu li{font-size:80%;margin:1px 10px}.dropdownCheckboxes ul.dropdown-menu label{font-weight:normal}.dropdownCheckboxes ul.dropdown-menu button{display:inline-block;margin:6px 0 0 0;font-size:90%}
+ .scrollable-menu {height: auto; max-height: 200px; overflow-x: hidden; }
